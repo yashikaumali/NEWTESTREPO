@@ -38,8 +38,8 @@ public class User {
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedAt;;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<Task> tasks;
+//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+//    private List<UserTask> userTasks;
 
     public User(){}
 
